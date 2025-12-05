@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+echo "⏳ pre-push: running typecheck (tsc --noEmit)..."
+npm run typecheck
+status=$?
+if [ $status -ne 0 ]; then
+  echo "❌ Typecheck falhou. Abortando push."
+  exit $status
+fi
+
+echo "✅ Typecheck passou."
+
+echo "⏳ pre-push: running lint-staged for staged files..."
+npx lint-staged
+status=$?
+if [ $status -ne 0 ]; then
+  echo "❌ lint-staged falhou. Abortando push."
+  exit $status
+fi
+
+echo "✅ lint-staged passou. Push permitido."
+exit 0

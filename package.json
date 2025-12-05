@@ -4,17 +4,42 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\"",
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium",
+    "test:api": "playwright test --project=api",
+    "test:headed": "playwright test --headed",
+    "codegen": "playwright codegen",
+    "show-report": "playwright show-report",
+    "show-trace": "playwright show-trace",
+    "test:tag": "playwright test --workers=1 --grep"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "eslint --max-warnings=0 --fix",
+    "tests/**/*.{ts,tsx}": "eslint --fix"
+  },
   "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
     "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
     "@typescript-eslint/eslint-plugin": "^8.48.1",
     "@typescript-eslint/parser": "^8.48.1",
     "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mailosaur": "^9.0.0"
   }
 }

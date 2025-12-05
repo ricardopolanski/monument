@@ -1,0 +1,61 @@
+{
+  "cookies": [
+    {
+      "name": "connect.sid",
+      "value": "s%3A-bR5ZecBRDfjOpe8HK4e7Sj-WiuxAOfx.k%2F8NTbbd6xuHT8qxsWIsHSCUrqLp2TO%2F72I3xBKFcX8",
+      "domain": "api-ext.stg.monument.io",
+      "path": "/",
+      "expires": 1764941423.37947,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-session-jg00kaaq",
+      "value": "d3VSWDE1eVR0OTloaW9uZHVGQU9jQ1pnRzlyTE1zY1ZHY0QyZGV0NG5iVlZsTVc1cG9JU1lZYzIyK09seGlCVzEvL1pmbTVyWG9vREthcG1rWXFvalBjWTFSQnhSTFZQMG5tZ0ZXUjJ4YkE9LS1QRTNPRFd2M1NnenFqbExUZmdiQkFBPT0=--3260d101f9174d5bf39acdee83b81bba60ec9c71",
+      "domain": ".monument.io",
+      "path": "/",
+      "expires": 1765459845,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-device-id-jg00kaaq",
+      "value": "56aea567-64a9-4d38-987c-a46b95e7be5e",
+      "domain": ".monument.io",
+      "path": "/",
+      "expires": 1788185025,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://monument.stg.monument.io",
+      "localStorage": [
+        {
+          "name": "isTaskCenterOpen",
+          "value": "false"
+        },
+        {
+          "name": "NRBA_SESSION",
+          "value": "{\"value\":\"12060f6d9d30f6ee\",\"inactiveAt\":1764856822410,\"expiresAt\":1764869422410,\"updatedAt\":1764855022998,\"sessionReplayMode\":0,\"sessionReplaySentFirstChunk\":false,\"sessionTraceMode\":0,\"traceHarvestStarted\":false,\"loggingMode\":2,\"serverTimeDiff\":-20650,\"custom\":{},\"numOfResets\":0,\"consent\":false}"
+        },
+        {
+          "name": "monument_value",
+          "value": "{\"id\":\"c8377820-d068-11f0-a82f-21bd55ecfe6b\",\"firstName\":\"Ricardo\",\"lastName\":\"Polanski\",\"email\":\"rpolanski@live.com\",\"roleName\":\"admin\",\"organizationUuids\":[\"f4998ff0-8204-11f0-973a-89f348dc1def\",\"f4bafaa1-8204-11f0-973a-89f348dc1def\",\"f4bafaa3-8204-11f0-973a-89f348dc1def\",\"f4bafaa5-8204-11f0-973a-89f348dc1def\",\"f4bafaa7-8204-11f0-973a-89f348dc1def\",\"f4bafaa9-8204-11f0-973a-89f348dc1def\",\"f4bafaab-8204-11f0-973a-89f348dc1def\",\"f4bafaad-8204-11f0-973a-89f348dc1def\",\"f4bafaaf-8204-11f0-973a-89f348dc1def\",\"f4bafab1-8204-11f0-973a-89f348dc1def\",\"f4bb21b1-8204-11f0-973a-89f348dc1def\",\"f4bb21b3-8204-11f0-973a-89f348dc1def\",\"f4bb21b5-8204-11f0-973a-89f348dc1def\",\"f4bb21b7-8204-11f0-973a-89f348dc1def\",\"f4bb21b9-8204-11f0-973a-89f348dc1def\",\"f4bb21bb-8204-11f0-973a-89f348dc1def\",\"f4bb48c1-8204-11f0-973a-89f348dc1def\",\"f4bb96e1-8204-11f0-973a-89f348dc1def\",\"f4bb96ed-8204-11f0-973a-89f348dc1def\",\"f4bb96f7-8204-11f0-973a-89f348dc1def\",\"f4bbbdf3-8204-11f0-973a-89f348dc1def\",\"f4bbbdfe-8204-11f0-973a-89f348dc1def\",\"f4bbbe0c-8204-11f0-973a-89f348dc1def\",\"f4bbe501-8204-11f0-973a-89f348dc1def\",\"f4bbe50c-8204-11f0-973a-89f348dc1def\",\"f4bbe517-8204-11f0-973a-89f348dc1def\",\"f4bc0c16-8204-11f0-973a-89f348dc1def\",\"f4bc0c21-8204-11f0-973a-89f348dc1def\",\"f4bc0c2d-8204-11f0-973a-89f348dc1def\",\"f4bc0c39-8204-11f0-973a-89f348dc1def\",\"f4bc0c45-8204-11f0-973a-89f348dc1def\",\"f4bc0c51-8204-11f0-973a-89f348dc1def\",\"f4bc3329-8204-11f0-973a-89f348dc1def\",\"f4bc3335-8204-11f0-973a-89f348dc1def\",\"f4bc3340-8204-11f0-973a-89f348dc1def\",\"f4bc334b-8204-11f0-973a-89f348dc1def\",\"f4bc3357-8204-11f0-973a-89f348dc1def\",\"f4bc5a31-8204-11f0-973a-89f348dc1def\",\"f4bc5a3d-8204-11f0-973a-89f348dc1def\",\"f4bc5a48-8204-11f0-973a-89f348dc1def\",\"f4bc5a54-8204-11f0-973a-89f348dc1def\",\"f4bc5a60-8204-11f0-973a-89f348dc1def\",\"f4bc5a6b-8204-11f0-973a-89f348dc1def\",\"f4bc8143-8204-11f0-973a-89f348dc1def\",\"f4bc814f-8204-11f0-973a-89f348dc1def\",\"f4bc815a-8204-11f0-973a-89f348dc1def\",\"f4bc8165-8204-11f0-973a-89f348dc1def\",\"f4bc8170-8204-11f0-973a-89f348dc1def\",\"f4bc817c-8204-11f0-973a-89f348dc1def\",\"f4bca852-8204-11f0-973a-89f348dc1def\",\"f4bca85d-8204-11f0-973a-89f348dc1def\",\"f4bca868-8204-11f0-973a-89f348dc1def\",\"f4bca873-8204-11f0-973a-89f348dc1def\",\"f4bca87e-8204-11f0-973a-89f348dc1def\",\"f4bca889-8204-11f0-973a-89f348dc1def\",\"f4bccf60-8204-11f0-973a-89f348dc1def\",\"f4bccf6c-8204-11f0-973a-89f348dc1def\",\"f4bccf78-8204-11f0-973a-89f348dc1def\",\"f4bccf83-8204-11f0-973a-89f348dc1def\",\"f4bccf8f-8204-11f0-973a-89f348dc1def\",\"f4bccf9b-8204-11f0-973a-89f348dc1def\",\"f4bcf670-8204-11f0-973a-89f348dc1def\",\"f4bcf67c-8204-11f0-973a-89f348dc1def\",\"f4bcf688-8204-11f0-973a-89f348dc1def\",\"f4bcf697-8204-11f0-973a-89f348dc1def\",\"f4bcf6a2-8204-11f0-973a-89f348dc1def\",\"f4bcf6ad-8204-11f0-973a-89f348dc1def\",\"f4bd1d80-8204-11f0-973a-89f348dc1def\",\"f4bd1d8b-8204-11f0-973a-89f348dc1def\",\"f4bd1d95-8204-11f0-973a-89f348dc1def\",\"f4bd1da1-8204-11f0-973a-89f348dc1def\",\"11111111-1111-1111-1111-111111111111\"],\"hasAllFacilityAccess\":true,\"permissions\":{\"dashboard\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"autopayWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"delinquencyWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"ecriWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"eligibleTenantsWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"insuranceWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"leadsWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"netMoveInsWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"occupancyWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"revenueWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"unitStatusWidget\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"reports\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"managementReport\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"financialReport\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"tenantsReport\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"occupancyReport\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"tenants\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"units\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"unitGroups\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"leads\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"payment\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"refunds\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"invoice\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"writeOffs\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"credit\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"voidInvoice\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"communicationTemplates\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"singleMessages\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"massMessages\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"printQueue\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"tasks\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"ecris\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"promotions\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"delinquencyManagement\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"usersSettings\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"rolesSettings\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"facilitiesSettings\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"storefrontSettings\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"organizationSettings\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"billingAndTaxesSettings\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"templateDocuments\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"automationRules\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"rentalFormBuilder\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"investorInsights\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"operationsInsights\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"marketingInsights\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"revenueInsights\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"rates\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"rentAdjustments\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true},\"accessPlans\":{\"canView\":true,\"canEdit\":true,\"canCreate\":true,\"canDelete\":true}},\"isAdmin\":true,\"portfolioName\":\"Demo Self Storage Account\",\"isLoggedIn\":true}"
+        },
+        {
+          "name": "intercom.intercom-state",
+          "value": "{\"app\":{\"openConfig\":{\"unifiedStyling\":true,\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Home\",\"navigationLabel\":\"Home\",\"badge\":null},{\"type\":\"help\",\"label\":\"Help\",\"navigationLabel\":\"Help\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Messages\",\"navigationLabel\":\"Messages\",\"badge\":null},{\"type\":\"tickets\",\"label\":\"Tickets\",\"navigationLabel\":\"Tickets\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Monument\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true},\"helpCenterSiteUrl\":\"https://help.monument.io\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":false},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#7d52f8\",\"colorDark\":\"#976cff\",\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":true,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"secondaryColor\":\"#f0efff\",\"secondaryColorDark\":\"#f0efff\",\"showLauncher\":false,\"themeMode\":\"light\",\"updatedAt\":1764771135,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"role\":\"user\",\"locale\":\"en\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1764855025554},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}"
+        },
+        {
+          "name": "selectedTaskGroup",
+          "value": "null"
+        }
+      ]
+    }
+  ]
+}

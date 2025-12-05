@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+echo "⏳ pre-commit: running lint-staged..."
+npx lint-staged
+status=$?
+if [ $status -ne 0 ]; then
+  echo "❌ lint-staged found problems. Aborting commit."
+  exit $status
+fi
+echo "✅ pre-commit checks passed."
