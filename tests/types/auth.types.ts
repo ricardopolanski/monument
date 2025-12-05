@@ -4,5 +4,10 @@ export interface Credentials {
     password: string;
   }
   
+  export interface LoginOptions {
+    expectNavigation?: boolean;
+    acceptTermsAndConditions?: boolean;
+  }
+
   export type Role = 'admin' | 'viewer' | 'gestor';
   

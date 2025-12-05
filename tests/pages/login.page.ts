@@ -1,8 +1,10 @@
+// tests/pages/login.page.ts
 import { Page, Locator, expect } from '@playwright/test';
 
-import { Credentials } from '../types/auth.types';
+import { Credentials, LoginOptions } from '../types/auth.types';
 import { BASE_URL } from '../utils/env.utils';
 import { BasePage } from './base.page';
+import { ActivationPage } from './activate-user.page'; // ajuste se o arquivo for ./activate-user.page
 
 export class LoginPage extends BasePage {
   readonly email: Locator;
@@ -23,20 +25,33 @@ export class LoginPage extends BasePage {
     await expect(this.email).toBeVisible();
   }
 
-  /**
-   * Login. If expectNavigation = true, wait for navigation (on success).
-   */
-  async login(credentials: Credentials, expectNavigation = true): Promise<void> {
+  async login(
+    credentials: Credentials,
+    options?: Partial<LoginOptions>
+  ): Promise<void> {
+    const opts: LoginOptions = {
+      expectNavigation: true,
+      acceptTermsAndConditions: false,
+      ...options,
+    };
+
     await this.email.fill(credentials.email);
     await this.password.fill(credentials.password);
 
-    if (expectNavigation) {
-      await Promise.all([
-        this.page.waitForNavigation({ waitUntil: 'networkidle' }),
-        this.signIn.click(),
-      ]);
-    } else {
+    if (opts.expectNavigation) {
       await this.signIn.click();
+    } else {
+      await Promise.all([this.page.waitForNavigation({ waitUntil: 'networkidle' }), this.signIn.click()]);
+    }
+
+    if (opts.acceptTermsAndConditions) {
+      try {
+        const activation = new ActivationPage(this.page);
+        await activation.acceptTermsAndContinue();
+        await this.page.waitForLoadState('networkidle').catch(() => {});
+      } catch (err) {
+        console.warn('acceptTermsAndContinue: warning -', (err as Error).message ?? err);
+      }
     }
   }
 
