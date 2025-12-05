@@ -1,27 +1,37 @@
 name: Playwright tests
 on: [push, pull_request]
+
+env:
+  API_URL: https://api-ext.stg.monument.io
+  BASE_URL: https://monument.stg.monument.io
+  ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+  ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+  MAILOSAUR_API_KEY: ${{ secrets.MAILOSAUR_API_KEY }}
+  MAILOSAUR_SERVER_ID: ${{ secrets.MAILOSAUR_SERVER_ID }}
+  EXTENDED_TIME_OUT: '60000'
+  MAILOSAUR_TIMEOUT: '90000'
+  MAILOSAUR_POLLING_INTERVAL: '20000'
+
 jobs:
-  env:
-    API_URL: https://api-ext.stg.monument.io
-    BASE_URL: https://monument.stg.monument.io
-    ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
-    ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-    MAILOSAUR_API_KEY: ${{ secrets.MAILOSAUR_API_KEY }}
-    MAILOSAUR_SERVER_ID: ${{ secrets.MAILOSAUR_SERVER_ID }}
-    EXTENDED_TIME_OUT: '60000'
-    MAILOSAUR_TIMEOUT: '90000'
-    MAILOSAUR_POLLING_INTERVAL: '20000'
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - run: npm ci
-      - run: npx playwright install --with-deps
-      - run: npm run test
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run tests
+        run: npm run test
+
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
