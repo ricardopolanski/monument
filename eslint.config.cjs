@@ -4,10 +4,10 @@ const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const importPlugin = require('eslint-plugin-import');
 
 module.exports = [
-  // Ignorar pastas pesadas
+  // Ignore heavy folders
   { ignores: ['node_modules/**', 'dist/**', 'playwright-report/**', 'test-results/**'] },
 
-  // Regras para TS/TSX (aplicadas ao código em geral)
+  // Rules for TS/TSX (applied to code in general)
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
@@ -34,7 +34,7 @@ module.exports = [
       ],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
     },
-    // settings para eslint-plugin-import (resolver typescript)
+    // settings for eslint-plugin-import (typescript resolver)
     settings: {
       'import/resolver': {
         typescript: {
@@ -44,16 +44,16 @@ module.exports = [
     },
   },
 
-  // Overrides específicos para tests: relaxar regras que atrapalham fluxo
+  // Specific overrides for tests: relax rules that hinder flow
   {
     files: ['tests/**/*.ts', 'tests/**/*.tsx'],
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off', // permite any em testes
-      'no-console': 'off', // permite console em testes
+      '@typescript-eslint/no-explicit-any': 'off', // allow any in tests
+      'no-console': 'off', // allow console in tests
     },
   },
 
-  // JS simples (se precisar)
+  // Plain JS (if needed)
   {
     files: ['**/*.js'],
     languageOptions: { ecmaVersion: 2021, sourceType: 'module' },

@@ -1,6 +1,16 @@
 name: Playwright tests
 on: [push, pull_request]
 jobs:
+  env:
+    API_URL: https://api-ext.stg.monument.io
+    BASE_URL: https://monument.stg.monument.io
+    ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+    ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+    MAILOSAUR_API_KEY: ${{ secrets.MAILOSAUR_API_KEY }}
+    MAILOSAUR_SERVER_ID: ${{ secrets.MAILOSAUR_SERVER_ID }}
+    EXTENDED_TIME_OUT: '60000'
+    MAILOSAUR_TIMEOUT: '90000'
+    MAILOSAUR_POLLING_INTERVAL: '20000'
   test:
     runs-on: ubuntu-latest
     steps:

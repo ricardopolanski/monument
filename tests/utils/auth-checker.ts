@@ -8,17 +8,17 @@ export async function isStorageValidForRole(role: Role): Promise<boolean> {
   const path = `storage/${role}.json`;
 
   if (!fs.existsSync(path)) {
-    console.log(`${path} não existe.`);
+    console.log(`${path} does not exist.`);
     return false;
   }
 
   const stats = fs.statSync(path);
   if (stats.size < 10) {
-    console.log(`${path} parece corrompido.`);
+    console.log(`${path} appears to be corrupted.`);
     return false;
   }
 
-  // testa se sessão ainda é válida: tenta acessar /dashboard e ver se não redireciona para login
+  // test if session is still valid: try to access /dashboard and check if it doesn't redirect to login
   const browser = await chromium.launch();
   try {
     const context = await browser.newContext({ storageState: path });
@@ -30,14 +30,14 @@ export async function isStorageValidForRole(role: Role): Promise<boolean> {
     await context.close();
 
     if (url.includes('/auth/login') || url.includes('/login')) {
-      console.log(`${path} expirou ou não permite acesso ao dashboard.`);
+      console.log(`${path} expired or does not allow access to dashboard.`);
       return false;
     }
 
-    console.log(`${path} válido.`);
+    console.log(`${path} is valid.`);
     return true;
   } catch (err) {
-    console.log(`Erro ao validar ${path}:`, (err as Error).message);
+    console.log(`Error validating ${path}:`, (err as Error).message);
     return false;
   } finally {
     await browser.close();
