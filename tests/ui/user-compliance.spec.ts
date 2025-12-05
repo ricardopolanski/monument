@@ -13,8 +13,8 @@ import { FacilitiesPage } from '../pages/facilities.page';
 const EXTENDED_TIME_OUT = Number(process.env.EXTENDED_TIME_OUT ?? 60_000);
 const API_URL = process.env.API_URL ?? 'https://api-ext.stg.monument.io';
 
-test.describe('Alba-only user full flow (create → activate → UI verify)', () => {
-  test.only('create user via API, activate, login UI and verify only Alba is accessible', async ({ request, page, browser }) => {
+test.describe('Alba-only user full flow (create → activate → UI verify) - @positive @user-compliance', () => {
+  test('create user via API, activate, login UI and verify only Alba is accessible', async ({ request, page, browser }) => {
 
     const { mailAddress } = await createMailosaurUser();
 
