@@ -35,7 +35,7 @@ test.describe('Negative Scenarios - Login flows - @negative @login', () => {
       password: 'wrong-pass',
     };
 
-    await login.login(badCredentials, false);
+    await login.login(badCredentials, { expectNavigation: false });
 
     await login.expectAuthError('email address');
   });
