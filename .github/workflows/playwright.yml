@@ -30,7 +30,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run tests
-        run: npm run test
+        run: npm run test:ci
 
       - name: Upload Playwright Report
         if: always()

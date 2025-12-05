@@ -8,7 +8,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\"",
     "test": "playwright test",
-    "ci": "playwright test --workers=4",
+    "test:ci": "playwright test --workers=4",
     "test:ui": "playwright test --project=chromium",
     "test:api": "playwright test --project=api",
     "test:headed": "playwright test --headed",
