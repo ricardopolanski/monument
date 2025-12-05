@@ -24,7 +24,6 @@ async function createFreshAdminContext(browser: any): Promise<BrowserContext> {
       email: CREDENTIALS.admin.email,
       password: CREDENTIALS.admin.password,
     },
-    true,
   );
 
   // ensure login was successful

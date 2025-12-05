@@ -15,7 +15,7 @@ test.describe('Positive Scenarios - Login flows - @positive @login', () => {
 
     // open login page
     await login.open();
-    await login.login({ email: VALID_EMAIL, password: VALID_PASSWORD }, true);
+    await login.login({ email: VALID_EMAIL, password: VALID_PASSWORD }, { expectNavigation: true });
 
     // dashboard validations
     await dashboard.expectLoaded();
